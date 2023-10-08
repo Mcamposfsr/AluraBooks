@@ -1,0 +1,85 @@
+/* --cor-de-fundo:#d4d4d4;
+    --branco: #ffffff;
+    --cor-laranja:#EB9B00;
+    --cor-azul-degrade:#01355c;
+    --fonte-principal:'Poppins'; */
+
+
+.contato{
+padding: 2em;
+background-color: var(--branco);
+
+}
+.contato__titulo{
+color: var(--cor-azul-degrade);
+font-weight: 500;
+margin-bottom: 1em;
+font-size: 18px;
+
+}
+.contato__paragrafo{
+    color: var(--cor-azul-degrade);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.contato__input{
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid var(--cor-azul-degrade);
+    border-radius: 1.5em;
+    margin-bottom: 1em;
+}
+.contato__input::placeholder{
+    background-image: url("../Imagens/Email.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--cor-azul-degrade);
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    font-family:var(--fonte-principal) ;
+    padding: 0 0 0 2rem;
+
+
+}
+/* --------------------- */
+.rodape{
+    padding: 1em;
+}
+.rodape__titulo{
+color: black;
+font-family:var(--fonte-assinatura);
+font-weight: 500;
+
+}
+.rodape__assinatura{
+    font-family:var(--fonte-assinatura);
+    padding: 0  0  0 0.2em;
+    background-color: transparent;
+    color: black;
+}
+.rodape__data{
+    margin-top: 0.3em;
+    font-family:var(--fonte-assinatura);
+    /* padding: 0  0  0 0.2em; */
+    background-color: transparent;
+    color: black;
+}
+
+@media screen and (min-width:1728px){
+    .contato{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 2em 20em;
+    }
+    .contato__texto{
+        width: 40%;
+    }
+    .contato__input{
+        width: 50%;
+    }
+}
+
